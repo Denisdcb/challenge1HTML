@@ -3,43 +3,54 @@
     <head>
         <!-- Entete de la page-->
         <title>Mon portfolio </title>
+        <meta charset="UTF-8">
+        <meta name="Denisdcb" content="Portfolio Denis Dechambre">
+        <link rel="icon" type="png" href="iconD.png">
     </head>
     <body>
         <!-- Contenu de la page-->
-         <header>
+         <header id="top">
             <h1><center>MON PORTFOLIO </center></h1><br>
-            <nav><center>PROJETS ETUDES ARTICLES CONTACT</center></nav><br>
+            <nav><center>
+                    <a href="#projets">PROJETS</a>
+                    <a href="#etudes">ETUDES</a>
+                    <a href="#articles">ARTICLES</a>
+                    <a href="#contact">CONTACT</a>
+                </center>
+            </nav><br>
             <h2><center>DECHAMBRE DENIS</center></h2><br><br>
          </header>
          <main>
-            <h1>PROJETS</h1>
-            <article>
-                <img src="placeholder">
-                <h2>Projet1</h2>
-                <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                    Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
-                    <a href="placelink">En savoir plus</a>
-                </p>
-            </article>
-            <article></article>
-                <img src="placeholder">
-                <h2>Projet2</h2>
-                <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                    Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
-                    <a href="placelink">En savoir plus</a>
-                </p>
-            </article>
-            <article></article>
-                <img src="placeholder">
-                <h2>Projet3</h2>
-                <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                    Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
-                    <a href="placelink">En savoir plus</a>
-                </p>
-            </article>
-            <div>
+            <div id="projets">
+                <h1>PROJETS</h1>
+                <article>
+                    <img src="https://placehold.co/200" alt="Image Projet 1" width="200" height="200">
+                    <h2>Projet1</h2>
+                    <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
+                        <a href="placelink" title="Plus d'infos">En savoir plus</a>
+                    </p>
+                </article>
+                <article>
+                    <img src="https://placehold.co/200" alt="Image Projet 2" width="200" height="200">
+                    <h2>Projet2</h2>
+                    <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
+                        <a href="placelink" title="Plus d'infos">En savoir plus</a>
+                    </p>
+                </article>
+                <article>
+                    <img src="https://placehold.co/200" alt="Image Projet 3" width="200" height="200">
+                    <h2>Projet3</h2>
+                    <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>
+                        <a href="placelink" title="Plus d'infos">En savoir plus</a>
+                    </p>
+                </article>
+            </div>
+            <div id="etudes">
                 <h1>ETUDES</h1>
-                <img src="placeholder">
+                <img src="https://placehold.co/200" alt="Photo de profil" width="200" height="200"><br>
                 Dechambre<br>
                 Denis<br>
                 30 ans<br>
@@ -53,30 +64,32 @@
                 <p4><strong>DATE</strong>« Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p4><br>
             </div>
-            <article>
+            <article id="articles">
                 <h1>ARTICLES</h1>
-                <img src="placeholder"><br>
+                <img src="https://placehold.co/200" alt="Image Article 1" width="200" height="200"><br>
                 <p1><h3>Article 1</h3>« Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-                    <a href="placeholder">Lire       </a><a href="placeholder">En savoir plus</a><br>
+                    <p><a href="placeholder" title="Lire l'article">Lire&nbsp;</a></p><p><a href="placeholder" title="Plus d'infos">En savoir plus</a></p><br>
                 </p1><br>
-                <img src="placeholder"><br>
+                <img src="https://placehold.co/200" alt="Image Article 2" width="200" height="200"><br>
                 <p1><h3>Article 2</h3>« Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-                    <a href="placeholder">Lire          </a><a href="placeholder">En savoir plus</a><br>
+                    <p><a href="placeholder" title="Lire l'article">Lire&nbsp;</a></p><p><a href="placeholder" title="Plus d'infos">En savoir plus</a></p><br>
                 </p1>
             </article>
          </main>
          <footer>
-            <div>
+            <div id="contact">
                 <h1>CONTACT</h1><br>
-                Nom et prénom<br>
-                <input type="text"><br>
-                Mail<br>
-                <input type="text"><br>
-                Message<br>
-                <input type="text"><br><br><br><br>
+                <form action="/challengeHTML" method="post">
+                    <label for="fullname">Nom et prénom<br><input type="text" id="fullname" name="user_full_name"></label><br>
+                    <label for="mail">Adresse e-mail<br><input type="email" id="mail" name="usermail"></label><br>
+                    <label for="message">Message<br><textarea id="message" name="user_message"></textarea></label><br><br>
+                    <button type="submit">Envoyer</button> <button type="reset">Effacer</button>
+                    <br><br><br><br>
+                </form>
             </div>
+            <center><a href="#top"><button type="button">Retour menu</button></a></center>
             <center>monportfolio.com</center>
          </footer>
     </body>
